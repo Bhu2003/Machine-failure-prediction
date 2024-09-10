@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload CSV</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style  
+        body {
+            background-image: url('C:\project\Machine-Failure-Prediction\damil-gettyimages-932628690-1600.webp'); /* Replace with your image path */
+            background-size: cover; /* Cover ensures the background image covers the entire screen */
+            background-repeat: no-repeat; /* No-repeat ensures the image is not tiled */
+            background-position: center; /* Centers the background image */
+            height: 100vh; /* Sets the height of the background image to the full viewport height */
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* Optional: Adds a semi-transparent white background to the container */
+            padding: 20px; /* Optional: Adds padding inside the container */
+            margin-top: 50px; /* Adjust margin from top to center the container vertically */
+            border-radius: 10px; /* Optional: Adds rounded corners to the container */
+        }
+
+        .form-group {
+            margin-bottom: 20px; /* Adds space between form elements */
+        }
+    ></style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Upload CSV File</h1>
+        <form id="upload-form" enctype="multipart/form-data" action="/predict" method="POST">
+            <div class="form-group">
+                <label for="file">Choose CSV file to upload</label>
+                <input type="file" name="file" id="file" class="form-control-file" title="Choose file" required>
+                <small class="form-text text-muted">Please select a CSV file to upload.</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+    </div>
+</body>
+</html>

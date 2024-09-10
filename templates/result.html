@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Prediction Results</h1>
+        <div class="mt-5">
+          <!--  <p><strong>Mean Absolute Error (MAE):</strong> {{ mae }}</p>
+            <p><strong>Mean Squared Error (MSE):</strong> {{ mse }}</p>
+            <p><strong>Root Mean Squared Error (RMSE):</strong> {{ rmse }}</p>-->
+            <p><strong>Estimated Days Until Failure:</strong> {{ failure_estimate }}</p>
+            <a href="{{ output_filepath }}" class="btn btn-success">Download Predictions</a>
+        </div>
+        <a href="/" class="btn btn-primary mt-3">Upload Another File</a>
+    </div>
+</body>
+</html>
