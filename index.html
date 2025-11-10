@@ -1,23 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Machine Failure Prediction</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Machine Failure Prediction | Bhumika Kulkarni</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 2rem; background-color: #f5f7fa; color: #222; }
-    h1 { color: #0077b6; }
-    p { line-height: 1.6; font-size: 1rem; }
-    a { color: #0077b6; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    :root {
+      --primary: #0077b6;
+      --accent: #90e0ef;
+      --dark: #03045e;
+      --light: #f8f9fa;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, var(--light), #e3f2fd);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: var(--dark);
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: var(--accent);
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #eee;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      border-left: 5px solid var(--primary);
+      padding-left: 10px;
+      color: var(--dark);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.7;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      color: var(--dark);
+      text-decoration: underline;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--dark);
+      transform: translateY(-2px);
+    }
+
+    .image {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .image img {
+      width: 80%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--dark);
+      color: white;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: var(--accent);
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <h1>Machine Failure Prediction using CNN 🧠</h1>
-  <p>This project uses Convolutional Neural Networks to predict possible machine failures before they occur.</p>
-  <p><strong>Tech Stack:</strong> Python, TensorFlow, NumPy, Pandas, Matplotlib</p>
-  <p><a href="https://github.com/Bhu2003/Machine-failure-prediction" target="_blank">🔗 View Full Project on GitHub</a></p>
-  <p><img src="your_screenshot.png" alt="Model Result Example" width="500"></p>
+
+  <header>
+    <h1>Machine Failure Prediction</h1>
+    <p>Deep Learning project by <strong>Bhumika Kulkarni</strong></p>
+  </header>
+
+  <main>
+    <section>
+      <h2>🔍 Overview</h2>
+      <p>
+        The <strong>Machine Failure Prediction</strong> project uses a Convolutional Neural Network (CNN)
+        to predict potential equipment failures before they occur, reducing downtime and improving industrial efficiency.
+      </p>
+    </section>
+
+    <section>
+      <h2>⚙️ Tech Stack</h2>
+      <ul>
+        <li><strong>Language:</strong> Python</li>
+        <li><strong>Frameworks/Libraries:</strong> TensorFlow, NumPy, Pandas, Matplotlib</li>
+        <li><strong>Tools:</strong> Jupyter Notebook, GitHub</li>
+        <li><strong>Concepts:</strong> CNN, Predictive Maintenance, Data Analysis</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📊 Project Highlights</h2>
+      <ul>
+        <li>Trained CNN model on real-time machine performance datasets.</li>
+        <li>Predicted early signs of machine failures with optimized accuracy.</li>
+        <li>Visualized model performance and accuracy using Matplotlib graphs.</li>
+        <li>Helps reduce industrial downtime and maintenance costs.</li>
+      </ul>
+    </section>
+
+    <div class="image">
+      <img src="your_screenshot.png" alt="Model Output Graph or Accuracy Screenshot">
+      <p style="font-size: 0.9rem; color: #666;">(Add your model accuracy graph or output screenshot here)</p>
+    </div>
+
+    <section>
+      <h2>📁 GitHub Repository</h2>
+      <p>
+        View the full project code and documentation on GitHub:  
+        <a href="https://github.com/Bhu2003/Machine-failure-prediction" target="_blank" class="btn">🔗 View on GitHub</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>📬 Contact</h2>
+      <p>
+        <strong>Email:</strong> <a href="mailto:bhumikask03@gmail.com">bhumikask03@gmail.com</a><br>
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/bhumika-kulkarni/" target="_blank">linkedin.com/in/bhumika-kulkarni</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 <strong>Bhumika Kulkarni</strong> | Built with ❤️ using Python & TensorFlow
+  </footer>
+
 </body>
 </html>
-
